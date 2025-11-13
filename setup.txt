@@ -1,0 +1,86 @@
+You are an expert full-stack developer.
+Create a complete MERN-style full-stack project called `travel-guide-app` that runs locally in VS Code with minimal setup.
+
+The app should be a modern, visually appealing **travel companion website** with the following features:
+
+1. **Offline Map (OpenStreetMap + Leaflet)**
+   - Fetch and display the user’s current location using the browser’s geolocation API.
+   - Display an OpenStreetMap map using `react-leaflet`.
+   - Allow zoom, markers, and basic map interaction.
+   - Implement manual offline map image saving (cache tiles using service workers).
+
+2. **Group Travel Feature**
+   - Users can create and join travel groups based on **interest**, **vibe**, or **destination**.
+   - Each group shows its name, description, and a “Join” button.
+   - Store user info and group memberships in the backend.
+   - Backend API endpoints: `/groups`, `/groups/:id/join`, `/users`.
+
+3. **Solo Travel Feature**
+   - Detect nearby solo travelers (using geolocation).
+   - Show a list of nearby travelers with their name and social media link (e.g., Instagram).
+   - Clicking a traveler’s name redirects to their social link.
+   - Backend supports nearby user lookup (within 10 km).
+
+4. **Emergency Info Page**
+   - Display local emergency contact numbers such as police, ambulance, and fire.
+   - Data can be hard-coded or fetched from a JSON file like:
+     ```json
+     {"police": "100", "ambulance": "108", "fire": "101"}
+     ```
+   - Include “Call Now” buttons for mobile view.
+
+5. **Itinerary Planner**
+   - A search bar that lets the user look for “restaurants”, “parks”, or “temples”.
+   - Use the OpenStreetMap (Nominatim) API to show nearby results on the map.
+   - Add markers for results and show place names in a sidebar list.
+
+6. **Styling & Design**
+   - Use **React + Vite + Tailwind CSS** for the frontend.
+   - Make it visually appealing with a clean travel theme: soft blue tones, rounded cards, soft shadows, responsive grid layout, and modern typography.
+   - Add a top navigation bar linking to Map, Groups, Solo, Emergency, and Itinerary pages.
+
+7. **Backend & Database**
+   - Use **Node.js + Express.js**.
+   - Database: **SQLite** (either plain SQLite or Prisma ORM).
+   - Enable **CORS** so the frontend and backend communicate smoothly.
+   - Include working example endpoints for all features.
+
+8. **Project Setup Requirements**
+   - The project must run locally in VS Code with these commands:
+     ```
+     npm install
+     npx prisma generate
+     npx prisma db push
+     npm run dev
+     ```
+   - Include `.env` example values if needed (e.g., database path).
+
+9. **Folder Structure**
+travel-guide-app/
+├── server/
+│ ├── index.js
+│ ├── routes/
+│ ├── models/
+│ └── prisma/
+│ └── schema.prisma
+├── client/
+│ ├── src/
+│ │ ├── pages/
+│ │ ├── components/
+│ │ ├── App.jsx
+│ │ └── main.jsx
+│ ├── package.json
+├── .env
+└── package.json
+
+pgsql
+Copy code
+
+10. **Output Instructions**
+ - Output the **complete file tree** and **exact contents of each file**.
+ - Add short comments explaining each major section or function.
+ - Ensure the app opens in the browser and displays the styled homepage with all the above features.
+
+
+
+The goal is a ready-to-run project that I can copy directly into VS Code and run using the commands above to see the travel companion web app.

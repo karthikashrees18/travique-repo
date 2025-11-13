@@ -1,0 +1,24 @@
+# TODO for Travel Guide App
+
+- [x] Create root package.json with scripts
+- [x] Create .env file
+- [x] Create server/index.js (Express server setup)
+- [x] Create server/prisma/schema.prisma (Database schema)
+- [x] Create server/routes/groups.js (API for groups)
+- [x] Create server/routes/users.js (API for users)
+- [x] Create server/routes/emergency.js (API for emergency info)
+- [x] Create client/package.json
+- [x] Create client/vite.config.js
+- [x] Create client/tailwind.config.js
+- [x] Create client/src/main.jsx
+- [x] Create client/src/App.jsx
+- [x] Create client/src/pages/Map.jsx
+- [x] Create client/src/pages/Groups.jsx
+- [x] Create client/src/pages/Solo.jsx
+- [x] Create client/src/pages/Emergency.jsx
+- [x] Create client/src/pages/Itinerary.jsx
+- [x] Create client/src/components/Navbar.jsx
+- [x] Create client/public/emergency.json
+- [x] Install dependencies (npm install in root and client)
+- [x] Run Prisma commands (generate, db push)
+- [x] Test the app (npm run dev)
