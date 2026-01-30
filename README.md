@@ -121,7 +121,7 @@ travel-guide-app/
 Make sure you have Node.js, npm, and VS Code installed.
 
 **1️⃣ Clone the repository**
-git clone https://github.com/your-username/travique-repo.git
+git clone https://github.com/karthikashrees18/travique-repo.git
 cd travel-guide-app
 
 **2️⃣ Install dependencies**
